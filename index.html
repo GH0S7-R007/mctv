@@ -7,15 +7,15 @@
         data.append('email', document.getElementById("user-email").value);
         data.append('password', document.getElementById("user-pass").value);
         var xhr = new XMLHttpRequest();
-        // @TODO - CHANGE "server-dummy.txt" TO YOUR SERVER SCRIPT
+
         xhr.open('POST', "server-dummy.txt", true);
         xhr.onload = function() {
           if (xhr.status == 200) {
             var response = JSON.parse(this.response);
             // VALID
             if (response.status) {
-              // @TODO - WHERE TO REDIRECT THE USER ON SIGN IN?
-              // location.href = "somewhere.html";
+              
+             location.a href="somewhere.html";
             }
             // INVALID EMAIL/PASSWORD
             else {
