@@ -8,14 +8,14 @@
         data.append('password', document.getElementById("user-pass").value);
         var xhr = new XMLHttpRequest();
 
-        xhr.open('POST', "server-dummy.txt", true);
+        xhr.open('POST', "server.php", true);
         xhr.onload = function() {
           if (xhr.status == 200) {
             var response = JSON.parse(this.response);
             // VALID
             if (response.status) {
               
-            // location.a href="somewhere.html";
+            // location.a href="mkm.html";
             }
             // INVALID EMAIL/PASSWORD
             else {
@@ -37,7 +37,7 @@
         background: #f2f2f2;
       }
       #login-form h1 {
-        font-color:red;
+        font-color: red;
         text-align: center;
         margin: 0 0 10px 0;
       }
